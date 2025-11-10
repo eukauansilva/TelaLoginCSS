@@ -1,0 +1,106 @@
+html{
+    background: linear-gradient(to bottom,green 0%,rgba(4, 2, 11, 0.963) 100%);
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.cardprincipal{
+    display: grid;
+    min-height: 40vh;
+    width: 1000px;
+    max-width: 82%;
+    border-radius: 24px;
+    padding: 62px;
+    gap: 38px;
+    align-items: center;
+    grid-template-columns: 1fr 420px;
+    background-color: black;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.esquerdo{
+    grid-column: 1 / 2;
+}
+
+.direito{
+    grid-column: 2 / 3;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    padding: 32px;
+    width: 360px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 40px #201c26;
+}
+
+h1{
+    font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: aquamarine;
+}
+
+h2{
+    text-align: center;
+    color: greenyellow;
+}
+
+input{
+    color: white;
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 8px 12px;
+    transform: translateY(-2px); box-shadow: 0 0 9px #201c26;
+}
+
+label{
+    color: white;
+}
+
+button{
+    width: 100%;
+    padding: 32px;
+    margin: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(-2px); box-shadow: 0 0 5px #00ff99;
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+.imagem{
+    width: 200px;
+    max-width: 100%;
+    border-radius: 20px;
+    transform: translateY(-2px); box-shadow: 0 0 15px #00ff99;
+}
+
+@media (max-width: 1028px){
+    .cardprincipal{
+        display: flex;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 63px;
+        justify-items: center;
+        align-items: center;
+
+    }
+    .direito{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
